@@ -1,10 +1,20 @@
 # chunkwm, yabai and skhd configs
-My personal yabai and skhd configs
+My personal chunkwm, yabai and skhd configs
 
-Inspired by [Julian-Heng](https://github.com/Julian-Heng/chunkwm-yabai-config).
+See my [dotfiles](https://gitlab.com/julian-heng/dotfiles.git) repo for my other configs
 
 NOTE: yabai requires System Integrity Protection to be disabled to work properly. See [here](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection) for more information.
 
+## Installing for chunkwm
+```sh
+# Remove previous links
+$ rm -f "${HOME}"/.{chunkwm,skhd}rc
+
+# Install configs
+$ git clone https://github.com/Julian-Heng/chunkwm-yabai-config.git "${HOME}"/.config/chunkwm
+$ ln -s "${HOME}/.config/chunkwm/chunkwm/chunkwmrc" "${HOME}/.chunkwmrc"
+$ ln -s "${HOME}/.config/chunkwm/chunkwm/skhdrc" "${HOME}/.skhdrc"
+```
 
 ## Installing for yabai
 ```sh
@@ -18,12 +28,9 @@ $ ln -s "${HOME}/.config/yabai/yabai/skhdrc" "${HOME}/.skhdrc"
 ```
 
 ## Keyboard shortcuts
-### Yabai
+### Chunkwm / Yabai
 #### Changing focus
-<kbd>lalt</kbd> + <kbd>hjkl</kbd>
-
-#### Move windows
-<kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>hjkl</kbd>
+<kbd>alt</kbd> + <kbd>hjkl</kbd>
 
 #### Resize windows
 
@@ -34,6 +41,9 @@ $ ln -s "${HOME}/.config/yabai/yabai/skhdrc" "${HOME}/.skhdrc"
 | Resize up    | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>k</kbd> |
 | Resize right | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>l</kbd> |
 | Equalise     | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>0</kbd> |
+
+#### Move windows
+<kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>hjkl</kbd>
 
 #### Move windows to workspace
 
