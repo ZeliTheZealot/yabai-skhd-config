@@ -21,10 +21,12 @@ $ ln -s "${HOME}/.config/yabai/yabai/skhdrc" "${HOME}/.skhdrc"
 ### Focus actions
 #### Changing focus to a window in a given direction
 <kbd>lalt</kbd> + <kbd>hjkl</kbd>
+
 Assumes display 2 is above display 1.
 
 #### Focus display (monitor)
 <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>m</kbd>
+
 Focuses recent display.
 
 #### Focus desktop (space)
@@ -38,6 +40,7 @@ Focuses recent display.
 
 #### Move windows towards the given direction
 <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>hjkl</kbd>
+
 Assumes display 2 is above display 1.
 
 #### Move window to another desktop
@@ -135,7 +138,3 @@ Click [here](scripts/open_iterm2.sh) to view the script
 
 ##### Key Combination
 <kbd>alt</kbd> + <kbd>return</kbd>
-```
-
-```
-alt - return : /path/to/launch/terminal

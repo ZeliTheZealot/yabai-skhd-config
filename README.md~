@@ -84,6 +84,8 @@ Assumes display 2 is above display 1.
 | Native fullscreen | <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> |
 | Center window     | <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>c</kbd> |
 
+### Choosing where to put next opened window
+
 #### Insertion point
 
 | Action                       | Key Combination                                                     |
@@ -98,22 +100,21 @@ Assumes display 2 is above display 1.
 | Action          | Key Combination                                                     |
 |-----------------|---------------------------------------------------------------------|
 | Toggle float    | <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>space</kbd>                |
-| Toggle gaps     | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>g</kbd>                    |
-| Restart chunkwm | <kbd>lctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>r</kbd> |
+| Toggle gaps     | <kbd>alt</kbd> + <kbd>g</kbd>                    |
+| Restart yabai   | <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>r</kbd> |
 
-### Non-chunkwm
-#### Show information
-##### Description
+### Show information (non-Yabai)
+#### Description
 Uses `osascript` to show information like CPU, memory, battery, etc. The CPU script requires [osx-cpu-temp](https://github.com/lavoiesl/osx-cpu-temp) installed. The song script supports iTunes and cmus.
 
 Click [here](scripts) to view the script folder
 
 Note: May have to change the location of the scripts in skhdrc
 
-##### Key Combination
+#### Key Combination
 <kbd>fn</kbd> + <kbd>lalt</kbd> + <kbd>num</kbd>
 
-##### Screenshots
+#### Screenshots
 <img width="382" height="101" src="screenshots/cpu.png?raw=true"><img width="382" height="101" src="screenshots/mem.png?raw=true">
 <img width="382" height="101" src="screenshots/bat.png?raw=true"><img width="382" height="101" src="screenshots/disk.png?raw=true">
 <img width="382" height="101" src="screenshots/song.png?raw=true">
@@ -125,7 +126,7 @@ fn + lalt - 3 : /path/to/script
 ...
 ```
 
-#### Opening applications
+### Opening applications (non-Yabai)
 #### Launch iTerm2
 ##### Description
 Launches iTerm2 using like in i3-wm.
