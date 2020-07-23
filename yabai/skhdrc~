@@ -82,13 +82,21 @@ shift + alt - c : yabai -m window --toggle float;\
 alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # Set insertion point for focused container (use when want to pick where to make new container) 
-ralt - h : yabai -m window --insert west
-ralt - j : yabai -m window --insert south
-ralt - k : yabai -m window --insert north
-ralt - l : yabai -m window --insert east
+shift + ralt - h : yabai -m window --insert west
+shift + ralt - j : yabai -m window --insert south
+shift + ralt - k : yabai -m window --insert north
+shift + ralt - l : yabai -m window --insert east
 
 # Float / Unfloat window
 shift + alt - space : yabai -m window --toggle float
+
+# Set unfocused windows to be slightly less opaque
+alt - o : yabai -m config window_opacity on && \
+yabai -m config normal_window_opacity 0.9
+
+# Set window opacity off (everything is Solid)
+alt - s : yabai -m config normal_window_opacity 1.0 && \
+yabai -m config window_opacity off
 
 # Restart Yabai
 cmd + alt + shift - r : 

@@ -98,6 +98,11 @@ Assumes display 2 is above display 1.
 | Insert up                    | <kbd>shift</kbd> + <kbd>ralt</kbd> + <kbd>k</kbd> |
 | Insert right                 | <kbd>shift</kbd> + <kbd>ralt</kbd> + <kbd>l</kbd> |
 
+#### Window opacity
+
+<kbd>alt</kbd> + <kbd>o</kbd> Set unfocused windows to be slightly less opaque
+<kbd>alt</kbd> + <kbd>s</kbd> Set unfocused windows to be completely opaque
+
 #### Misc
 
 | Action          | Key Combination                                                     |
